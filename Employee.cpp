@@ -49,7 +49,7 @@ void Employee::printAll()
     bool found = false;
     if (!fin)
     {
-        cout << "File Not Found or unable to find";
+        cout << "File Not Found or unable to find"<<endl;
         return;
     }
     fin.read((char *)this, sizeof(*this));
@@ -227,7 +227,7 @@ int main()
         case 6:
             exit(0);
         default:
-            cout << "\nInvalid Choice";
+            cout << "\nInvalid Choice"<<endl;
         }
     }
     cout << endl;
